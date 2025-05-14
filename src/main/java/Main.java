@@ -39,7 +39,7 @@ class Main {
             } catch(WrongStudentName e) {
                 System.out.println("Błędne imię studenta!");
             } catch(WrongAge e){
-                System.out.println("Błędny wiek studenta!");
+                System.out.println("Błędny wiek studenta");
             }catch(WrongDateOfBirth e){
                 System.out.println("Błędna data urodzenia studenta!");
             }catch(java.util.InputMismatchException e){
