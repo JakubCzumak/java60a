@@ -30,7 +30,9 @@ class Main {
                     case 1: exercise1(); break;
                     case 2: exercise2(); break;
                     case 3: exercise3(); break;
-                    default: return;
+                    case 0: return;
+                    case -1: break;
+                    default: break;
                 }
             } catch(IOException e) {
 
@@ -40,6 +42,9 @@ class Main {
                 System.out.println("Błędny wiek studenta!");
             }catch(WrongDateOfBirth e){
                 System.out.println("Błędna data urodzenia studenta!");
+            }catch(java.util.InputMismatchException e){
+                System.out.println("Błędny typ danych!");
+                scan.nextLine();
             }
         }
     }
